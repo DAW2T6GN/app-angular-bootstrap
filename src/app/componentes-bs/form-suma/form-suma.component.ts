@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class FormSumaComponent {
 
+  resultado = ""
+
+  frmSuma = {
+    numero1: null,
+    numero2: null    
+  }
+
+
+  calcularSuma(){
+    let suma = Number(this.frmSuma.numero1) + Number(this.frmSuma.numero2);
+    this.resultado = "La suma es: " + suma;
+  }
 }
